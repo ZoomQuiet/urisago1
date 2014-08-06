@@ -15,7 +15,7 @@ env.deploy_path = './'
 
 def deploy():
     loc0pu()
-    git2pl
+    git2pl()
     gae4up()
 
 
