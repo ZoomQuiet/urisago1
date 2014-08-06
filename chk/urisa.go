@@ -31,7 +31,7 @@ func help(w http.ResponseWriter, r *http.Request) {
 }
 const usageHelp = `
 URIsA ~ KSC 4 GAE powdered by go1
-{v12.05.4}
+{v12.05.4_140806}
 usage:
     $ curl -d "uri=http://sina.com" urisago1.appsp0t.com/chk
 or with GAE Datastore quick resp. if ahd checked:
@@ -171,7 +171,7 @@ func qchk(w http.ResponseWriter, r *http.Request) {
         //c.Infof("datastore key=%v", key.String())
         
         fmt.Fprint(w, "ask KCS API srv.\n")
-        fmt.Fprint(w, "/qchk(KCS):\t" + PHISHID[p])
+        fmt.Fprint(w, "/qchk(KCS):\t" + PHISHID[p] + "\n")
 
     }else{
         c.Infof("datastore ukey=%v", ukey.String())
@@ -179,7 +179,7 @@ func qchk(w http.ResponseWriter, r *http.Request) {
         fmt.Fprint(w, "datastore Get OK;-) \n")
         c.Infof("co4 datastore:%v \t Phish:%s", e2.Phish ,PHISHID[e2.Phish])
 
-        fmt.Fprint(w, "/qchk(GAE):\t" + PHISHID[e2.Phish])
+        fmt.Fprint(w, "/qchk(GAE):\t" + PHISHID[e2.Phish] + "\n")
     }
     //c.Infof("c2.Pish[4datastore] %v", c2.Pish)
     //c.Infof("genKSCuri(url) %v", _genKSCuri(url))
