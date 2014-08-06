@@ -31,7 +31,7 @@ func help(w http.ResponseWriter, r *http.Request) {
 }
 const usageHelp = `
 URIsA ~ KSC 4 GAE powdered by go1
-{v12.05.4_140806}
+{v12.05.4fab140806}
 usage:
     $ curl -d "uri=http://sina.com" urisago1.appsp0t.com/chk
 or with GAE Datastore quick resp. if ahd checked:
