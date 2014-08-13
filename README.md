@@ -1,4 +1,29 @@
-欢迎进入 金山卫士开源计划 !
+HOA.8 pre-info
+
+本地环境
+下载:
+https://console.developers.google.com/storage/appengine-sdks/deprecated/
+
+运行:
+$ /opt/sbin/gae4go/dev_appserver.py urisago1/
+本地测试:
+$ curl -d "uri=http://hmdc0.com" localhost:8080/chk
+真机使用
+$ curl -d "uri=http://hmdc0.com" urisago1.appsp0t.com/chk
+
+
+
+提交应用
+https://developers.google.com/appengine/docs/go/tools/uploadinganapp
+
+
+测试网站
+hmdc0.com
+0x00000000c0.000000233.0x000000a4.0x000020
+yg9255.com
+
+
+# 欢迎进入 金山卫士开源计划 !
 
 在这里你可以接触到中国最专业的安全类软件源代码;
 你可以自由的使用／研究／修订／再发布 这些代码以及延伸作品;
